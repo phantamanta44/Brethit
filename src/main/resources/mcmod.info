@@ -1,0 +1,17 @@
+[
+{
+  "modid": "brethit",
+  "name": "Brethit",
+  "description": "GOTY 2017",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["phantamanta44"],
+  "credits": "Nintendo - inspiration, Kevin MacLeod - soundtrack",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["chatflow"],
+  "requiredMods": ["chatflow"]
+}
+]
