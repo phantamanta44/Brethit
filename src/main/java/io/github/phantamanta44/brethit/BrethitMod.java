@@ -1,6 +1,8 @@
 package io.github.phantamanta44.brethit;
 
+import io.github.phantamanta44.brethit.block.BrethitBlocks;
 import io.github.phantamanta44.brethit.constant.ModConst;
+import io.github.phantamanta44.brethit.item.BrethitItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -25,6 +27,8 @@ public class BrethitMod {
 
     @EventHandler
     public void onPreInit(FMLPreInitializationEvent event) {
+        BrethitItems.init();
+        BrethitBlocks.init();
         PROXY.onPreInit();
     }
 

@@ -2,10 +2,12 @@ package io.github.phantamanta44.brethit.client;
 
 import io.github.phantamanta44.brethit.BrethitMod;
 import io.github.phantamanta44.brethit.CommonProxy;
+import io.github.phantamanta44.brethit.client.event.ClientEventHandler;
 import io.github.phantamanta44.brethit.constant.LangConst;
 import io.github.phantamanta44.brethit.util.GuiToastWrapper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
 
 import java.lang.reflect.Field;
@@ -31,12 +33,14 @@ public class ClientProxy extends CommonProxy {
             fieldToasts.set(mc, new GuiToastWrapper(mc));
         } catch (Exception e) {
             BrethitMod.LOGGER.error("Failed to do toastGui hack!");
+            e.printStackTrace();
         }
     }
 
     @Override
     public void onInit() {
         super.onInit();
+        MinecraftForge.EVENT_BUS.register(new ClientEventHandler());
         try {
             Method sendToast = Class.forName("vazkii.chatflow.handler.ToastHandler")
                     .getDeclaredMethod("setTooltip", String.class, Integer.TYPE);
