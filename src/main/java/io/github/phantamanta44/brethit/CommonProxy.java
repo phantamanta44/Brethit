@@ -1,6 +1,8 @@
 package io.github.phantamanta44.brethit;
 
 import io.github.phantamanta44.brethit.constant.LangConst;
+import io.github.phantamanta44.brethit.event.CommonEventHandler;
+import net.minecraftforge.common.MinecraftForge;
 
 public class CommonProxy {
 
@@ -9,7 +11,7 @@ public class CommonProxy {
     }
 
     public void onInit() {
-        // NO-OP
+        MinecraftForge.EVENT_BUS.register(new CommonEventHandler());
     }
 
     public void onPostInit() {
