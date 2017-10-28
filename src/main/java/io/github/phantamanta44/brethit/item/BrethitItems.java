@@ -1,6 +1,9 @@
 package io.github.phantamanta44.brethit.item;
 
 import io.github.phantamanta44.brethit.BrethitMod;
+import io.github.phantamanta44.brethit.item.base.UtilityArchetype;
+import io.github.phantamanta44.brethit.item.weapon.ItemBattleaxe;
+import io.github.phantamanta44.brethit.item.weapon.ItemSword;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -8,8 +11,10 @@ public class BrethitItems {
 
     public static class WEAPON {
 
-        public static void init() {
+        public static ItemSword ANCIENT_SWORD;
 
+        public static void init() {
+            ANCIENT_SWORD = new ItemSword(UtilityArchetype.ANCIENT);
         }
 
     }

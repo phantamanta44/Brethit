@@ -1,0 +1,23 @@
+{
+  "itemConfig": {
+    "axeSound": [
+    ],
+    "bowSound": [
+    ],
+    "swordSound": [
+    ],
+    "toolSound": [
+      "brethit:w_sword_ancient"
+    ],
+    "shieldSound": [
+    ],
+    "lightArmor": [
+    ],
+    "mediumArmor": [
+    ],
+    "crystalArmor": [
+    ],
+    "heavyArmor": [
+    ]
+  }
+}

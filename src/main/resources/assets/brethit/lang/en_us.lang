@@ -1,3 +1,7 @@
+item.brethit:w_sword_ancient.name=Ancient Sword
+
+itemGroup.brethit=Brethit
+
 brethit.toast.tool.breaking=Your %s is badly damaged.
 brethit.toast.tool.broke=Your %s broke!
 

@@ -1,14 +1,12 @@
-package io.github.phantamanta44.finalvoyage.block.base;
+package io.github.phantamanta44.brethit.block.base;
 
-import io.github.phantamanta44.finalvoyage.item.base.ItemBlockModSubs;
+import io.github.phantamanta44.brethit.item.base.ItemBlockModSubs;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-
-import java.util.List;
+import net.minecraft.util.NonNullList;
 
 public class BlockModSubs extends BlockMod {
 
@@ -20,9 +18,9 @@ public class BlockModSubs extends BlockMod {
     }
 
     @Override
-    public void getSubBlocks(Item item, CreativeTabs tab, List<ItemStack> list) {
+    public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items) {
         for (int i = 0; i < subs; i++)
-            list.add(new ItemStack(item, 1, i));
+            items.add(new ItemStack(this, 1, i));
     }
 
     @Override
