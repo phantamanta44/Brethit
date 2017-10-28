@@ -15,11 +15,11 @@ public class HarvestPredicate implements Predicate<IBlockState> {
 
     public static final HarvestPredicate SWORD = new HarvestPredicate()
             .material(Material.CACTUS).material(Material.CARPET).material(Material.GLASS)
-            .material(Material.ICE).material(Material.LEAVES).material(Material.PLANTS)
-            .material(Material.VINE).material(Material.WEB);
+            .material(Material.GOURD).material(Material.ICE).material(Material.LEAVES)
+            .material(Material.PLANTS).material(Material.VINE).material(Material.WEB);
     public static final HarvestPredicate AXE = SWORD.copy()
-            .material(Material.CLOTH).material(Material.CORAL).material(Material.GOURD)
-            .material(Material.PISTON).material(Material.SPONGE).material(Material.WOOD);
+            .material(Material.CLOTH).material(Material.CORAL).material(Material.PISTON)
+            .material(Material.SPONGE).material(Material.WOOD);
 
     private final Set<Material> validMaterials = new HashSet<>();
     private final Set<IRegistryDelegate<Block>> validBlocks = new HashSet<>();
