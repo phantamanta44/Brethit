@@ -14,7 +14,7 @@ public enum UtilityClass {
     W_SWORD(1F, HarvestPredicate.SWORD, 1F, Constants.AS_MOD);
 
     private static class Constants {
-        private static final float AS_HEAVY = 0.55F;
+        private static final float AS_HEAVY = 0.58F;
         private static final float AS_MOD = 0.9F;
         private static final float AS_DAGGER = 0.9F;
         private static final float AS_SPEAR = 1.3F;
