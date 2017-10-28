@@ -49,7 +49,7 @@ public class ItemUtilityUnique extends ItemUtility {
         attrs.accept(SharedMonsterAttributes.ATTACK_DAMAGE,
                 new AttributeModifier(ItemUtility.MOD_ATK_DMG, "Tool modifier", atkDmg, 0));
         attrs.accept(SharedMonsterAttributes.ATTACK_SPEED,
-                new AttributeModifier(ItemUtility.MOD_ATK_SPD, "Tool modifier", uClass.atkSpdFactor - 4, 0));
+                new AttributeModifier(ItemUtility.MOD_ATK_SPD, "Tool modifier", 1.8F * uClass.atkSpdFactor - 4, 0));
     }
 
 }
