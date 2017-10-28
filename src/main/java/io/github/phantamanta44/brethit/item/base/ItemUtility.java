@@ -10,6 +10,7 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
@@ -74,6 +75,11 @@ public abstract class ItemUtility extends ItemMod {
     @Override
     public boolean isFull3D() {
         return true;
+    }
+
+    @Override
+    public EnumRarity getRarity(ItemStack stack) {
+        return arch.rarity;
     }
 
     @Override

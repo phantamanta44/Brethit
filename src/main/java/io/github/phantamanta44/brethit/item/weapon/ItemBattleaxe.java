@@ -10,12 +10,12 @@ import java.util.function.BiConsumer;
 public class ItemBattleaxe extends ItemWeapon {
 
     public ItemBattleaxe(UtilityArchetype arch) {
-        super("baxe_" + arch.name, UtilityClass.AXE, arch);
+        super("baxe_" + arch.name, UtilityClass.W_BAXE, arch);
     }
 
     @Override
     public void registerAttrs(BiConsumer<IAttribute, AttributeModifier> attrs) {
-        // NO-OP
+        // TODO Knockback?
     }
 
 }

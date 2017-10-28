@@ -7,10 +7,10 @@ import net.minecraft.entity.ai.attributes.IAttribute;
 
 import java.util.function.BiConsumer;
 
-public class ItemSword extends ItemWeapon {
+public class ItemCleaver extends ItemWeapon {
 
-    public ItemSword(UtilityArchetype arch) {
-        super("sword_" + arch.name, UtilityClass.W_SWORD, arch);
+    public ItemCleaver(UtilityArchetype arch) {
+        super("cleaver_" + arch.name, UtilityClass.W_CLEAVER, arch);
     }
 
     @Override

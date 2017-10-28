@@ -13,13 +13,22 @@ import java.util.function.Predicate;
 
 public class HarvestPredicate implements Predicate<IBlockState> {
 
-    public static final HarvestPredicate SWORD = new HarvestPredicate()
-            .material(Material.CACTUS).material(Material.CARPET).material(Material.GLASS)
-            .material(Material.GOURD).material(Material.ICE).material(Material.LEAVES)
-            .material(Material.PLANTS).material(Material.VINE).material(Material.WEB);
+    public static final HarvestPredicate SPEAR = new HarvestPredicate()
+            .material(Material.GLASS).material(Material.GOURD).material(Material.ICE)
+            .material(Material.PLANTS).material(Material.VINE);
+    public static final HarvestPredicate SWORD = SPEAR.copy()
+            .material(Material.CACTUS).material(Material.CARPET).material(Material.LEAVES)
+            .material(Material.WEB);
     public static final HarvestPredicate AXE = SWORD.copy()
-            .material(Material.CLOTH).material(Material.CORAL).material(Material.PISTON)
-            .material(Material.SPONGE).material(Material.WOOD);
+            .material(Material.CLOTH).material(Material.CORAL).material(Material.PACKED_ICE)
+            .material(Material.PISTON).material(Material.SPONGE).material(Material.WOOD);
+    public static final HarvestPredicate CLEAVER = AXE.copy()
+            .material(Material.REDSTONE_LIGHT).material(Material.ROCK);
+
+    public static final HarvestPredicate BLUNT = new HarvestPredicate()
+            .material(Material.CACTUS).material(Material.CORAL).material(Material.GLASS)
+            .material(Material.GOURD).material(Material.ICE).material(Material.PACKED_ICE)
+            .material(Material.REDSTONE_LIGHT).material(Material.ROCK);
 
     private final Set<Material> validMaterials = new HashSet<>();
     private final Set<IRegistryDelegate<Block>> validBlocks = new HashSet<>();

@@ -7,15 +7,15 @@ import net.minecraft.entity.ai.attributes.IAttribute;
 
 import java.util.function.BiConsumer;
 
-public class ItemSword extends ItemWeapon {
+public class ItemSpear extends ItemWeapon {
 
-    public ItemSword(UtilityArchetype arch) {
-        super("sword_" + arch.name, UtilityClass.W_SWORD, arch);
+    public ItemSpear(UtilityArchetype arch) {
+        super("spear_" + arch.name, UtilityClass.W_SPEAR, arch);
     }
 
     @Override
     public void registerAttrs(BiConsumer<IAttribute, AttributeModifier> attrs) {
-        // NO-OP
+        // TODO Armour penetration?
     }
 
 }
