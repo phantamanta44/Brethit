@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "brethit:items/w_ancient_spear_unique_off"
+  }
+}

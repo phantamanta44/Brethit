@@ -1,7 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "brethit:items/w_sword_ancient_handle0",
-    "layer1": "brethit:items/w_sword_ancient_handle1"
+    "layer0": "brethit:items/w_sword_ancient_off"
   }
 }

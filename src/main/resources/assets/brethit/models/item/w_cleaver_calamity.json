@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "brethit:items/w_sword_ancient_on"
+    "layer0": "brethit:items/w_cleaver_calamity"
   }
 }

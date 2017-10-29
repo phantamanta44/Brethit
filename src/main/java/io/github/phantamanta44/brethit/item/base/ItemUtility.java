@@ -45,6 +45,8 @@ public abstract class ItemUtility extends ItemMod {
                 return inv.offHandInventory.contains(stack) || !inv.mainInventory.contains(stack) || inv.getCurrentItem() == stack
                         ? modelEq : modelUneq;
             });
+        } else {
+            ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(ModConst.MOD_PREF + name, "inventory"));
         }
     }
 

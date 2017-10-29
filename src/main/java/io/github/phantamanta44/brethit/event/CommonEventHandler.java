@@ -24,7 +24,7 @@ public class CommonEventHandler {
             eating.put(event.getEntityLiving().getUniqueID(), ((ItemFood)event.getItem().getItem()).getHealAmount(event.getItem()));
         }
     }
-    
+
     @SubscribeEvent
     public void onEatCancel(LivingEntityUseItemEvent.Stop event) {
         if (!event.getEntityLiving().world.isRemote) {
